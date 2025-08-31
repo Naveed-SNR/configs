@@ -1,0 +1,77 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: gcc build active file",
+			"command": "C:\\MinGW\\bin\\gcc.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g3",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:\\MinGW\\bin\\gcc.exe"
+		},
+		{
+			"type": "shell",
+			"label": "C/C++: gcc build active file and run program",
+			"command": "C:\\MinGW\\bin\\gcc.exe -g3 \"${file}\" -o \"${fileDirname}\\${fileBasenameNoExtension}.exe\" ;\"${fileDirname}\\${fileBasenameNoExtension}.exe\"",
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"detail": "compiler: C:\\MinGW\\bin\\gcc.exe",
+			"group": "build"
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: clang build active file",
+			"command": "C:\\msys64\\mingw64\\bin\\clang.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g3",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: C:\\msys64\\mingw64\\bin\\clang.exe"
+		},
+		{
+			"type": "shell",
+			"label": "C/C++: clang build active file and run program",
+			"command": "C:\\msys64\\mingw64\\bin\\clang.exe -fdiagnostics-color=always -g3 \"${file}\" -o \"${fileDirname}\\${fileBasenameNoExtension}.exe\" ;\"${fileDirname}\\${fileBasenameNoExtension}.exe\"",
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: C:\\msys64\\mingw64\\bin\\clang.exe"
+		}
+	]
+}

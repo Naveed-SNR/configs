@@ -1,0 +1,288 @@
+/*================== Custom Firefox Theme - One Dark Pro + Neon Cyan ==================*/
+
+#navigator-toolbox {
+	border: 0 !important;
+}
+
+#tabbrowser-arrowscrollbox {
+	padding-left: 0px !important;
+}
+html[sizemode="maximized"] #tabbrowser-arrowscrollbox {
+	margin-top: 0px !important;
+	padding-left: 2px !important;
+}
+
+.titlebar-spacer[type="pre-tabs"] {
+	border: 0 !important;
+	display: none !important;
+}
+.titlebar-buttonbox {
+	padding: 11px !important;
+	margin-right: 0px !important;
+}
+
+.tab-line {
+	height: 0px !important;
+}
+.tabbrowser-tab::after {
+	border: 0 !important;
+}
+
+#nav-bar {
+	box-shadow: none !important;
+	padding: 0 !important;
+	background: #000000 !important;
+}
+
+#urlbar-background {
+	border: 0 !important;
+	box-shadow: none !important;
+	border-radius: 3px !important;
+	background: #000000 !important;
+}
+#urlbar[open] > .urlbarView > .urlbarView-body-outer > .urlbarView-body-inner {
+	border-top: 0 !important;
+}
+.urlbarView {
+	border-radius: 4px !important;
+	padding: 0 4px !important;
+	margin-bottom: 6px;
+	background: #111111 !important;
+}
+
+.findbar-button,
+.toolbarbutton.bookmark-item:not(.subviewbutton),
+.toolbar .toolbarbutton-1 > .toolbarbutton-text,
+.toolbar .toolbarbutton-1 > .toolbarbutton-badge-stack {
+	border-radius: 3px !important;
+	color: #01f2fe !important;
+	fill: #01f2fe !important;
+}
+
+/* Basic transition effects */
+#tabs-newtab-button,
+.titlebar-button > .toolbarbutton-icon,
+.toolbar #tabs-newtab-button:not([disabled="true"]):not([checked]):not([open]):not(:active) > .toolbarbutton-icon,
+.tabbrowser-tab > .tab-stack > .tab-background:not([selected="true"]),
+.toolbarbutton-icon,
+#fxa-avatar-image {
+	transition: all 0.3s ease !important;
+}
+
+/* Tabs toolbar */
+#titlebar #TabsToolbar {
+	padding-left: 3px !important;
+	background: #000000 !important;
+}
+
+html[sizemode="maximized"] #titlebar #TabsToolbar {
+	padding-left: 0px !important;
+}
+
+/* Tab Styles */
+.tab-background[multiselected="true"],
+.tab-background[selected="true"] {
+	background: rgba(1, 242, 254, 0.1) !important;
+	box-shadow: none !important;
+}
+.tabbrowser-tab[selected="true"] .tab-label {
+	color: #01f2fe !important;
+}
+.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected="true"]) {
+	background-color: rgba(1, 242, 254, 0.05) !important;
+}
+.tabbrowser-tab:not([visuallyselected="true"]) {
+	color: #01f2fe !important;
+}
+
+/* New Tab / All Tabs Buttons */
+#tabs-newtab-button,
+#alltabs-button,
+#new-tab-button,
+#scrollbutton-up,
+#scrollbutton-down {
+	fill: #01f2fe !important;
+}
+#tabs-newtab-button:hover > image,
+#alltabs-button:hover > stack,
+#new-tab-button:hover > image,
+#scrollbutton-up:hover,
+#scrollbutton-down:hover {
+	fill: #01f2fe !important;
+	background-color: rgba(1, 242, 254, 0.1) !important;
+}
+
+/* URL bar icons */
+.urlbar-icon-wrapper,
+.urlbar-icon,
+.identity-box-button image#identity-icon,
+#tracking-protection-icon-box #tracking-protection-icon {
+	fill: #01f2fe !important;
+	transition: all 0.3s ease !important;
+}
+.urlbar-icon-wrapper:hover,
+.identity-box-button:hover,
+#tracking-protection-icon-container:hover {
+	background-color: rgba(1, 242, 254, 0.15) !important;
+}
+
+/* Toolbar items */
+#PersonalToolbar .toolbarbutton-1,
+.findbar-button,
+.toolbarbutton.bookmark-item:not(.subviewbutton),
+.toolbar .toolbarbutton-1 > .toolbarbutton-icon,
+.toolbar .toolbarbutton-1 > .toolbarbutton-text,
+.toolbar .toolbarbutton-1 > .toolbarbutton-badge-stack {
+	color: #01f2fe !important;
+	fill: #01f2fe !important;
+	transition: all 0.3s ease !important;
+}
+#PersonalToolbar .toolbarbutton-1:hover,
+.findbar-button:hover,
+.toolbarbutton.bookmark-item:hover,
+.toolbar .toolbarbutton-1:hover > .toolbarbutton-icon,
+.toolbar .toolbarbutton-1:hover > .toolbarbutton-text,
+.toolbar .toolbarbutton-1:hover > .toolbarbutton-badge-stack {
+	background-color: rgba(1, 242, 254, 0.1) !important;
+}
+
+/* Close button on tabs */
+.tab-close-button.close-icon {
+	color: #01f2fe !important;
+	padding: 2px !important;
+	width: 15px !important;
+	height: 15px !important;
+}
+.tab-close-button.close-icon:hover {
+	background-color: rgba(1, 242, 254, 0.2) !important;
+	color: #000000 !important;
+}
+tab[selected="true"] .tab-content .tab-close-button.close-icon {
+	color: #01f2fe !important;
+}
+tab[selected="true"] .tab-content .tab-close-button.close-icon:hover {
+	color: #000000 !important;
+	background-color: #01f2fe !important;
+}
+
+/* Sidebar */
+#PersonalToolbar,
+#sidebar-box,
+.sidebar-panel[lwt-sidebar-brighttext] {
+	background-color: #000000 !important;
+	color: #01f2fe !important;
+}
+
+/* Panels (menus, etc.) */
+panelview {
+	background: #111111 !important;
+	color: #01f2fe !important;
+}
+panelview .toolbarbutton-1:hover,
+.toolbarbutton.subviewbutton:hover,
+.menu.subviewbutton[_moz-menuactive],
+menuitem.subviewbutton[_moz-menuactive],
+.widget-overflow-list .toolbarbutton-1:hover {
+	background: rgba(1, 242, 254, 0.1) !important;
+	color: #01f2fe !important;
+}
+
+/* Search bar */
+searchbar#searchbar {
+	border: 0 !important;
+	background-color: #000000 !important;
+	box-shadow: none !important;
+	color: #01f2fe !important;
+}
+/*================== TITLEBAR BUTTON DOT STYLE ==================*/
+.titlebar-buttonbox {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+}
+
+.titlebar-button {
+  background: none !important;
+  padding: 11px !important;
+  margin: 0 2px !important;
+}
+
+.titlebar-button > .toolbarbutton-icon {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  background-color: #01f2fe !important;
+  opacity: 0.83 !important;
+  transition: all 0.3s ease !important;
+  mask: none !important;
+  -webkit-mask: none !important;
+}
+
+/* Hover state reveals actual symbols */
+.titlebar-button:hover > .toolbarbutton-icon {
+  border-radius: 3px !important;
+  background-color: #01f2fe !important;
+  mask: none !important;
+  -webkit-mask: none !important;
+}
+
+/* Optional: Custom glyphs via Unicode (fallback) */
+.titlebar-button.titlebar-min:hover::before {
+  content: '–';
+  font-size: 14px;
+  color: black;
+  position: absolute;
+  margin-left: 1px;
+}
+.titlebar-button.titlebar-max:hover::before {
+  content: '⬜';
+  font-size: 12px;
+  color: black;
+  position: absolute;
+}
+.titlebar-button.titlebar-close:hover::before {
+  content: '✕';
+  font-size: 13px;
+  color: black;
+  position: absolute;
+}
+
+/* Hide text/icon inside buttons normally 
+.titlebar-button::before {
+  display: none;
+}*/
+
+/* Remove the pink mask icon in private browsing window title bar */
+#private-browsing-indicator-with-label {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+#private-browsing-indicator-with-label image {
+  display: none !important;
+}
+
+#private-browsing-indicator-with-label::after {
+  content: "🕶️";
+  font-size: 14px;
+  color: #01f2fe;
+  padding-left: 6px;
+}
+
+
+/* Hide the private browsing icon in the tab */
+.tabbrowser-tab[label*="New Private Tab"] .tab-icon-image,
+.tabbrowser-tab[label*="Private Browsing"] .tab-icon-image,
+.tabbrowser-tab[private] .tab-icon-image {
+  display: none !important;
+}
+
+/* OPTIONAL: Replace it with a custom emoji/icon */
+.tabbrowser-tab[private] .tab-label::before {
+  content: "🥷 ";
+  color: #01f2fe;
+}

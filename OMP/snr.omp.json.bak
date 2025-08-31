@@ -1,0 +1,19 @@
+{
+  "blocks": [
+    {
+      "segments": [
+        {
+          "type": "full",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "#ffffff",
+          "background": "#61AFEF",
+          "template": " {{ .Path }} ",
+          "include_folders": [
+            "/Users/posh/Projects"
+          ]
+        }
+      ]
+    }
+  ]
+}

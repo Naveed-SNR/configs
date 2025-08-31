@@ -1,0 +1,155 @@
+/**
+ * @name One Dark Pro Geist
+ * @description A clean, professional One Dark Pro-based Discord theme with Geist Mono font.
+ * @author YourName
+ * @version 1.0.0
+ */
+
+/* import base theme if needed */
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
+
+/* import Geist Mono font */
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&display=swap');
+
+body {
+    --font: 'Geist Mono', monospace;
+    --code-font: 'Geist Mono', monospace;
+
+    /* spacing and borders */
+    --gap: 12px;
+    --divider-thickness: 3px;
+    --border-thickness: 1px;
+
+    /* animations */
+    --animations: on;
+    --list-item-transition: 0.2s ease;
+    --border-hover-transition: 0.2s ease;
+
+    /* top bar */
+    --top-bar-height: 11px;
+    --top-bar-button-position: titlebar;
+    --top-bar-title-position: off;
+
+    /* window controls */
+    --custom-window-controls: on;
+    --window-control-size: 14px;
+
+    /* dms */
+    --custom-dms-icon: custom;
+    --dms-icon-svg-url: url('https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg');
+    --dms-icon-color-before: var(--icon-secondary);
+    --dms-icon-color-after: var(--white);
+
+    /* chat bar */
+    --custom-chatbar: aligned;
+    --chatbar-height: 47px;
+    --chatbar-padding: 8px;
+
+    /* user panel */
+    --small-user-panel: on;
+}
+
+/* One Dark Pro Color Scheme */
+:root {
+    --colors: on;
+
+    /* Backgrounds */
+    --bg-1: #000000;
+
+    --bg-2: #0d0f11;
+    --bg-3: #000000;
+    --bg-4: #0d0f11;
+
+    /*--bg-2: #000000;
+    --bg-4: #000000;*/
+
+
+    /* Text colors */
+/*    ///* --text-0: #ffffff;*/
+    //--text-1: #abb2bf;
+    //--text-2: #e5c07b; /* Function names or important text */
+    //--text-3:rgb(255, 255, 255); /* Strings and general text */
+    //--text-4: #56b6c2; /* Keywords and less prominent text */
+    //--text-5:rgb(32, 43, 54); /* Comments or muted text */
+
+    Accent colors */
+    --accent-1: #61afef; /* Primary links/buttons */
+    --accent-2: #0282d9;
+    --accent-3: #be5046;
+    --accent-4: #e06c75;
+    --accent-5: #d19a66;
+
+    /* Mention and replies */
+    --mention: radial-gradient(#00eaff11 , #00eaff11);
+    --mention-hover: radial-gradient(#00eaff21 , #00eaff21);
+    --reply: radial-gradient(#00eaff11 , #00eaff11);;
+    --reply-hover: radial-gradient(#00eaff21 , #00eaff21);;
+
+    /* Status colors */
+    --online: #98c379;
+    --dnd: #e06c75;
+    --idle: #d19a66;
+    --streaming: #c678dd;
+    --offline: #5c6370;
+
+    /* Hover states */
+    --hover: rgba(98, 114, 164, 0.15);
+    --active: rgba(98, 114, 164, 0.3);
+    --active-2: rgba(98, 114, 164, 0.5);
+    --message-hover: #111417;
+
+    /* Borders */
+/*    --border:rgba(62, 68, 81, 0.21);
+    --border-light:rgba(92, 99, 112, 0.21);
+    --border-hover:rgba(97, 175, 239, 0.21); */
+
+    /* Transparency options */
+    --panel-blur: off;
+    --blur-amount: 10px;
+    --bg-floating: var(--bg-3);
+}
+
+img[alt="App Icon"] {
+    display: none !important;
+}
+.childWrapper__6e9f8::before, .childWrapperNoHoverBg__6e9f8, .svg_cc5dd2 .shiftSVG_cc5dd2 {
+    /* background-color: white !important; */
+    color: white !important;
+}   
+
+/* 
+[class^="codeContainer"],
+[class*=" codeContainer"],  */
+[class ^="scrollbarGhostHairline"],
+[class *="scrollbarGhostHairline"],
+.scrollbarGhostHairline__506b3
+{
+    background-color: #04090b !important;
+    font-family: 'Geist Mono', monospace !important;
+    color: #abb2bf !important;
+    border-radius: 6px;
+    border:none;
+    padding: 0.92rem;
+}
+
+/* [class ^="embedFull"],
+[class *="embedFull"],
+{
+    background-color: #04090b !important;
+    font-family: 'Geist Mono', monospace !important;
+    color: #abb2bf !important;
+    border-radius: 6px;
+    border: none !important;
+    padding: 0.92rem;
+} */
+
+article.embedWrapper_b7e1cb.embedFull__623de.embed__623de[style] 
+{
+    background-color: #04090b !important;
+    font-family: 'Geist Mono', monospace !important;
+    color: #abb2bf !important;
+    border-radius: 11px;
+    margin: 0.3rem 0;
+    border-left-color: #ffffff !important; /* One Dark Pro blue */
+    border: none !important;
+}
