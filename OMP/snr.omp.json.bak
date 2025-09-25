@@ -1,17 +1,75 @@
 {
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "final_space": true,
   "blocks": [
     {
+      "type": "prompt",
+      "alignment": "left",
       "segments": [
         {
-          "type": "full",
+          "type": "path",
           "style": "powerline",
           "powerline_symbol": "",
-          "foreground": "#ffffff",
-          "background": "#61AFEF",
-          "template": " {{ .Path }} ",
-          "include_folders": [
-            "/Users/posh/Projects"
-          ]
+          "foreground": "#e0e1dd",
+          "background": "#1b263b",
+          "properties": {
+            "style": "folder",
+            "mapped_locations": {
+              "..": "📂"
+            },
+            "prefix": "C:/📂/",
+            "max_depth": 1
+          }
+        },
+        {
+          "type": "git",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "#e0e1dd",
+          "background": "#415a77",
+          "properties": {
+            "branch_icon": " ",
+            "display_status": true,
+            "fetch_status": true,
+            "branch_template": "{{ .HEAD }}"
+          }
+        },
+        {
+          "type": "python",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "#0d1b2a",
+          "background": "#778da9",
+          "properties": {
+            "fetch_virtual_env": true,
+            "display_mode": "context"
+          }
+        },
+        {
+          "type": "executiontime",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "#0d1b2a",
+          "background": "#e0e1dd",
+          "properties": {
+            "threshold": 500,
+            "always_enabled": true,
+            "format": "  {{ .FormattedMs }}"
+          }
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "right",
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#e0e1dd",
+          "properties": {
+            "text": "❯"
+          }
         }
       ]
     }
