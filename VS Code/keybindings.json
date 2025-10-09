@@ -1,0 +1,68 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+shift+A",
+        "command": "workbench.action.terminal.focus",
+        "when": "editorFocus"
+    },
+        {
+        "key": "ctrl+shift+A",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+a",
+        "command": "-notification.acceptPrimaryAction",
+        "when": "notificationFocus || notificationToastsVisible"
+    },
+    {
+        "key": "ctrl+alt+g",
+        "command": "workbench.action.chat.open",
+        "when": "!chatSetupDisabled && !chatSetupHidden"
+    },
+    {
+        "key": "ctrl+alt+i",
+        "command": "-workbench.action.chat.open",
+        "when": "!chatSetupDisabled && !chatSetupHidden"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "workbench.action.chat.openAgent",
+        "when": "config.chat.agent.enabled && !chatSetupDisabled && !chatSetupHidden"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "-workbench.action.chat.openAgent",
+        "when": "config.chat.agent.enabled && !chatSetupDisabled && !chatSetupHidden"
+    },
+    {
+        "key": "ctrl+alt+g",
+        "command": "workbench.panel.chat",
+        "when": "workbench.panel.chat.view.copilot.active"
+    },
+    {
+        "key": "ctrl+alt+i",
+        "command": "-workbench.panel.chat",
+        "when": "workbench.panel.chat.view.copilot.active"
+    },
+    {
+        "key": "ctrl+shift+'",
+        "command": "codeium.openChatView",
+        "when": "true"
+    },
+    {
+        "key": "ctrl+shift+a",
+        "command": "-codeium.openChatView",
+        "when": "true"
+    },
+    {
+        "key": "ctrl+shift+'",
+        "command": "codeium.openChatView",
+        "when": "false"
+    },
+    {
+        "key": "ctrl+alt+a",
+        "command": "-codeium.openChatView",
+        "when": "false"
+    },
+]
